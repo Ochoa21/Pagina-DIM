@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Equipo del Pueblo - Independiente Medellín</title>
+    <link rel="icon" href="https://telegra.ph/file/eaa7eb6ef4f6f77625555.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            background-color: #c00000;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            color: #c00000;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery a {
+            display: inline-block;
+            margin: 10px;
+        }
+        .gallery img {
+            width: 200px;  /* Cambiamos las dimensiones de las imágenes */
+            height: 150px; /* Nuevas dimensiones */
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px sólido #ccc;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #c00000;
+            color: blanco;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showAlert(sectionName) {
+            alert("Has hecho clic en la sección " + sectionName);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#inicio" onclick="showAlert('Inicio')">Inicio</a>
+        <a href="#noticias" onclick="showAlert('Noticias')">Noticias</a>
+        <a href="#partidos" onclick="showAlert('Partidos')">Partidos</a>
+        <a href="#contacto" onclick="showAlert('Contactos')">Contactos</a>
+    </div>
+
+    <div id="inicio" class="section">
+        <a href="https://dimoficial.com/" target="_blank"> 
+            <img src="https://telegra.ph/file/eaa7eb6ef4f6f77625555.jpg" alt="Escudo de Independiente Medellín" style="width: 100px; display: block; margin: 0 auto;">
+        </a>
+        <h2>El Equipo del Pueblo</h2>
+        <p>El Equipo del Pueblo es una página dedicada a divulgar información oficial de Independiente Medellín.</p>
+    </div>
+
+    <div id="noticias" class="section">
+        <h2>Noticias</h2>
+        <p>El Equipo del Pueblo brinda información oficial de Independiente Medellín, incluyendo noticias, contrataciones, encuentros futbolísticos y mucho más.</p>
+
+        <div class="gallery">
+            <!-- Aquí es donde agregamos enlaces a las imágenes -->
+            <a href="https://dimoficial.com/comunicado-oficial-cambio-en-la-presidencia-ejecutiva/" target="_blank">
+                <img src="https://telegra.ph/file/b9658cda2fd17e900a0f3.jpg" alt="Imagen 1">
+            </a>
+            <a href="https://tiendadim.com/" target="_blank">
+                <img src="https://telegra.ph/file/ec4fba14b2590a932518a.jpg" alt="Imagen 2">
+            </a>
+            <a href="https://dimoficial.com/primeras-palabras-de-adrian-velez-en-el-poderoso/" target="_blank">
+                <img src="https://telegra.ph/file/c7203f21bf345e65ff5a2.jpg" alt="Imagen 3">
+            </a>
+        </div>
+    </div>
+
+    <div id="partidos" class="section">
+        <h2>Partidos</h2>
+        <p>El rendimiento del equipo está mejorando. El último encuentro fue un empate.</p>
+        
+        <img src="imagen1.jpg" alt="Imagen 1" onclick="showAlert('Imagen 1')">
+    </div>
+
+    <div id="contacto" class="section">
+        <h2>Contacto</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo Electrónico">
+            <input type="text" placeholder="Asunto">
+            <textarea rows="4" placeholder="Mensaje"></textarea>
+            <button onclick="showAlert('Enviar Mensaje')">Enviar Mensaje</button>
+        </div>
+    </div>
+
+</body>
+</html>
